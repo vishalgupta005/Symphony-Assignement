@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.symphony.test.ProductNameTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyProductName"/>
+        </methods>
+      </class> <!-- com.symphony.test.ProductNameTest -->
+      <class name="com.symphony.test.ProductPriceTest">
+        <methods>
+          <include name="verifyProductPrice"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.symphony.test.ProductPriceTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

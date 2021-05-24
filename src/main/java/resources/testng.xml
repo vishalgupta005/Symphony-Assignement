@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Symphony Test">
+
+<listeners>
+<listener class-name="com.symphony.ExtendreportListener.ExtentReporterNG" />
+</listeners>
+
+  <test name="Symphony Test">
+  
+    <classes>
+     
+    <class name="com.symphony.test.ProductNameTest"></class>
+    <class name="com.symphony.test.ProductPriceTest"></class>
+    
+    </classes>
+  </test> 
+    
+  
+</suite> 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Product Name By Ascending Order Matched]]>
+    </line>
+    <line>
+      <![CDATA[Product Name By Descending Order Matched]]>
+    </line>
+    <line>
+      <![CDATA[Product price by ascending order matched]]>
+    </line>
+    <line>
+      <![CDATA[Product price by descending order matched]]>
+    </line>
+  </reporter-output>
+  <suite name="Symphony Test" duration-ms="45763" started-at="2021-05-23T15:53:23Z" finished-at="2021-05-23T15:54:09Z">
+    <groups>
+    </groups>
+    <test name="Symphony Test" duration-ms="45763" started-at="2021-05-23T15:53:23Z" finished-at="2021-05-23T15:54:09Z">
+      <class name="com.symphony.test.ProductPriceTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.symphony.test.ProductPriceTest@1a968a59]" name="setUp" is-config="true" duration-ms="11772" started-at="2021-05-23T21:23:52Z" finished-at="2021-05-23T21:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyProductPrice()[pri:1, instance:com.symphony.test.ProductPriceTest@1a968a59]" name="verifyProductPrice" duration-ms="5798" started-at="2021-05-23T21:24:03Z" finished-at="2021-05-23T21:24:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Product price by ascending order matched]]>
+            </line>
+            <line>
+              <![CDATA[Product price by descending order matched]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductPrice -->
+      </class> <!-- com.symphony.test.ProductPriceTest -->
+      <class name="com.symphony.test.ProductNameTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.symphony.test.ProductNameTest@548e7350]" name="setUp" is-config="true" duration-ms="16340" started-at="2021-05-23T21:23:23Z" finished-at="2021-05-23T21:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyProductName()[pri:1, instance:com.symphony.test.ProductNameTest@548e7350]" name="verifyProductName" duration-ms="10665" started-at="2021-05-23T21:23:40Z" finished-at="2021-05-23T21:23:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Product Name By Ascending Order Matched]]>
+            </line>
+            <line>
+              <![CDATA[Product Name By Descending Order Matched]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.symphony.test.ProductNameTest@548e7350]" name="tearDown" is-config="true" duration-ms="1152" started-at="2021-05-23T21:23:50Z" finished-at="2021-05-23T21:23:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.symphony.test.ProductNameTest -->
+    </test> <!-- Symphony Test -->
+  </suite> <!-- Symphony Test -->
+</testng-results>

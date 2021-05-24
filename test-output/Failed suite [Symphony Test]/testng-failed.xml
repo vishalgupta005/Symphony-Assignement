@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Symphony Test]]">
+  <listeners>
+    <listener class-name="com.symphony.ExtendreportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Symphony Test(failed)(failed)">
+    <classes>
+      <class name="com.symphony.test.ProductPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="productPriceTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.symphony.test.ProductPageTest -->
+    </classes>
+  </test> <!-- Symphony Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Symphony Test]] -->
