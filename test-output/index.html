@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Symphony_Test">
-              <span class="suite-name border-passed">Symphony Test</span>
+              <span class="suite-name border-skipped">Symphony Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Symphony_Test" class="hide-methods passed suite-Symphony_Test"> (hide)</a> <!-- hide-methods passed suite-Symphony_Test -->
-                      <a href="#" panel-name="suite-Symphony_Test" class="show-methods passed suite-Symphony_Test"> (show)</a> <!-- show-methods passed suite-Symphony_Test -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Symphony_Test" class="hide-methods skipped suite-Symphony_Test"> (hide)</a> <!-- hide-methods skipped suite-Symphony_Test -->
+                      <a href="#" panel-name="suite-Symphony_Test" class="show-methods skipped suite-Symphony_Test"> (show)</a> <!-- show-methods skipped suite-Symphony_Test -->
                     </span>
-                    <div class="method-list-content passed suite-Symphony_Test">
+                    <div class="method-list-content skipped suite-Symphony_Test">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Symphony_Test" title="com.symphony.test.ProductNameTest" hash-for-method="verifyProductName">verifyProductName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Symphony_Test" title="com.symphony.test.ProductPriceTest" hash-for-method="verifyProductPrice">verifyProductPrice</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Symphony_Test -->
+                    </div> <!-- method-list-content skipped suite-Symphony_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Symphony_Test" class="panel Symphony_Test">
-          <div class="suite-Symphony_Test-class-passed">
+          <div class="suite-Symphony_Test-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.symphony.test.ProductNameTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,13 +133,70 @@
                   <a name="verifyProductName">
                   </a> <!-- verifyProductName -->
                   <span class="method-name">verifyProductName</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 90.0.4430.212 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-0EHBFCG&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00D4B963+483]
+	GetHandleVerifier [0x00D4B941+449]
+	GetHandleVerifier [0x010F3308+3832712]
+	GetHandleVerifier [0x0110D69A+3940122]
+	GetHandleVerifier [0x01109AFB+3924859]
+	GetHandleVerifier [0x01107D9C+3917340]
+	GetHandleVerifier [0x0112E7FE+4075646]
+	GetHandleVerifier [0x0112E56C+4074988]
+	GetHandleVerifier [0x0112B2EB+4062059]
+	GetHandleVerifier [0x0110ED14+3945876]
+	GetHandleVerifier [0x0110FBCE+3949646]
+	GetHandleVerifier [0x0110FB59+3949529]
+	Ordinal0 [0x00D0B5CC+46540]
+	Ordinal0 [0x00D09F53+40787]
+	Ordinal0 [0x00D09B12+39698]
+	GetHandleVerifier [0x01011468+2907368]
+	GetHandleVerifier [0x00E571EE+1096302]
+	GetHandleVerifier [0x00E13E8D+821005]
+	GetHandleVerifier [0x00E1396B+819691]
+	GetHandleVerifier [0x00E13881+819457]
+	GetHandleVerifier [0x00E3F463+998627]
+	BaseThreadInitThunk [0x770BFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7A4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7A1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.symphony.base.TestBase.initialization(TestBase.java:47)
+	at com.symphony.test.ProductNameTest.setUp(ProductNameTest.java:28)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Symphony_Test-class-passed -->
-          <div class="suite-Symphony_Test-class-passed">
+          </div> <!-- suite-Symphony_Test-class-skipped -->
+          <div class="suite-Symphony_Test-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.symphony.test.ProductPriceTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,10 +205,67 @@
                   <a name="verifyProductPrice">
                   </a> <!-- verifyProductPrice -->
                   <span class="method-name">verifyProductPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 88
+Current browser version is 90.0.4430.212 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-0EHBFCG&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00D4B963+483]
+	GetHandleVerifier [0x00D4B941+449]
+	GetHandleVerifier [0x010F3308+3832712]
+	GetHandleVerifier [0x0110D69A+3940122]
+	GetHandleVerifier [0x01109AFB+3924859]
+	GetHandleVerifier [0x01107D9C+3917340]
+	GetHandleVerifier [0x0112E7FE+4075646]
+	GetHandleVerifier [0x0112E56C+4074988]
+	GetHandleVerifier [0x0112B2EB+4062059]
+	GetHandleVerifier [0x0110ED14+3945876]
+	GetHandleVerifier [0x0110FBCE+3949646]
+	GetHandleVerifier [0x0110FB59+3949529]
+	Ordinal0 [0x00D0B5CC+46540]
+	Ordinal0 [0x00D09F53+40787]
+	Ordinal0 [0x00D09B12+39698]
+	GetHandleVerifier [0x01011468+2907368]
+	GetHandleVerifier [0x00E571EE+1096302]
+	GetHandleVerifier [0x00E13E8D+821005]
+	GetHandleVerifier [0x00E1396B+819691]
+	GetHandleVerifier [0x00E13881+819457]
+	GetHandleVerifier [0x00E3F463+998627]
+	BaseThreadInitThunk [0x770BFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77AA7A4E+286]
+	RtlGetAppContainerNamedObjectPath [0x77AA7A1E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.symphony.base.TestBase.initialization(TestBase.java:47)
+	at com.symphony.test.ProductPriceTest.setUp(ProductPriceTest.java:24)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Symphony_Test-class-passed -->
+          </div> <!-- suite-Symphony_Test-class-skipped -->
         </div> <!-- panel Symphony_Test -->
         <div panel-name="test-xml-Symphony_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -212,16 +326,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyProductName')
 data.setCell(0, 2, 'com.symphony.test.ProductNameTest')
-data.setCell(0, 3, 10665);
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyProductPrice')
 data.setCell(1, 2, 'com.symphony.test.ProductPriceTest')
-data.setCell(1, 3, 5798);
+data.setCell(1, 3, 0);
 window.suiteTableData['Symphony_Test']= { tableData: data, tableDiv: 'times-div-Symphony_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Symphony_Test">
               </div> <!-- times-div-Symphony_Test -->
             </div> <!-- times-div -->
@@ -232,20 +346,6 @@ return data;
             <span class="header-content">Reporter output for Symphony Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyProductPrice</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Product price by ascending order matched</span>
-                <span class="reporter-method-output">Product price by descending order matched</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyProductName</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Product Name By Ascending Order Matched</span>
-                <span class="reporter-method-output">Product Name By Descending Order Matched</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Symphony_Test" class="panel">
@@ -263,28 +363,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.symphony.test.ProductNameTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyProductName</span>
-                <span class="method-start">16340 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">27007 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.symphony.test.ProductPriceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">28160 ms</span>
+                <span class="method-start">3553 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyProductPrice</span>
-                <span class="method-start">39932 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
